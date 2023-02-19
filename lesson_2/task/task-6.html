@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<h1>Задача-6</h1>
+	<p> З клавіатури вводяться вартість товару та кількість одиниць 3 товарів. Обчислити вартість кожного товару окремо
+		та загальну вартість. Вивести чек (як у супермаркеті) використовуючи елементи розмітки.</p>
+	<script>
+		let countProduct1 = parseInt(prompt('Введіть к-сть яблук', '0'));
+		let summaProduct1 = parseFloat(prompt('Введіть вартість ', '0'));
+		let countProduct2 = parseInt(prompt('Введіть к-сть груш', '0'));
+		let summaProduct2 = parseFloat(prompt('Введіть вартість ', '0'));
+		let countProduct3 = parseInt(prompt('Введіть к-сть апельсин', '0'));
+		let summaProduct3 = parseFloat(prompt('Введіть вартість', '0'));
+		let totalSumma1 = countProduct1 * summaProduct1;
+		let totalSumma2 = countProduct2 * summaProduct2;
+		let totalSumma3 = countProduct3 * summaProduct3;
+		let totalPrice = totalSumma1 + totalSumma2 + totalSumma3;
+		document.write(` ${countProduct1} * ${summaProduct1}  =  ${totalSumma1.toFixed(2)} грн <br>  Яблука <br>  ${countProduct2} * ${summaProduct2} =  ${totalSumma2.toFixed(2)} грн <br> Груші <br> ${countProduct3} * ${summaProduct3} =  ${totalSumma3.toFixed(2)} грн <br> Апельсини <br> <br> СУММА =  ${totalPrice.toFixed(2)} грн`);
+
+	</script>
+</body>
+
+</html>
